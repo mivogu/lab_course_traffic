@@ -6,7 +6,6 @@ import random
 import itertools
 import pandas as ps
 #import scitools
-%matplotlib inline
 from numpy import linspace, zeros
 import random
 
@@ -26,7 +25,7 @@ velocity_new = zeros(num_cells)
 
 autobahn_matrix = zeros([num_cells, num_timesteps])
 
-# initialize where the cars are initially
+# initialize where the cars are at t = 0
 for i in range(num_cells):
     if random.random() < c:
         autobahn_new[i] = 1
