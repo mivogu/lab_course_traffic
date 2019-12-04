@@ -5,7 +5,6 @@ import matplotlib.animation as animation
 import random
 import itertools
 import pandas as ps
-#import scitools
 from numpy import linspace, zeros
 import random
 
@@ -60,11 +59,9 @@ for k in range(num_timesteps):
             new_index = int(i + velocity_old[i])%num_cells
             autobahn_new[new_index] = 1
             velocity_new[new_index] = velocity_old[i]
-            
+
     autobahn_matrix[:, k] = autobahn_new
 
-print('Let''s print some text!')
-print('some more text, could be a or could be b')
-plt.set_cmap('binary')
 plt.matshow(autobahn_matrix.transpose())
+plt.set_cmap('binary')
 plt.show()
