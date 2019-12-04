@@ -30,6 +30,7 @@ print('number of cars: ', int(sum(autobahn)))
 # that is a typical situation at the limit as time goes to infinity.
 [autobahn, velocity] = multi_step(autobahn, velocity, v_max, p, 5000)
 print('multi_step done...')
+print('moving on to the actual simulation')
 
 # Simulate one timestep at a time. After each step, save the distribution of
 # cars to 'autobahn_matrix' so we can plot its development over time afterwards.
