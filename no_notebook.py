@@ -6,7 +6,6 @@ import random
 import itertools
 import pandas as ps
 #import scitools
-%matplotlib inline
 from numpy import linspace, zeros
 import random
 
@@ -63,7 +62,9 @@ for k in range(num_timesteps):
             velocity_new[new_index] = velocity_old[i]
             
     autobahn_matrix[:, k] = autobahn_new
-    
+
+print('Let''s print some text!')
+
 plt.set_cmap('binary')
 plt.matshow(autobahn_matrix.transpose())
 plt.show()
