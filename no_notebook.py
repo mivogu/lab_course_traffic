@@ -64,6 +64,7 @@ for k in range(num_timesteps):
     autobahn_matrix[:, k] = autobahn_new
 
 print('Let''s print some text!')
+print('some more text b')
 
 plt.set_cmap('binary')
 plt.matshow(autobahn_matrix.transpose())
