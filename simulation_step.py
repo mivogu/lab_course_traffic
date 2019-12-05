@@ -10,7 +10,7 @@
 from numpy import zeros
 from random import random as rand
 
-print('ein Gespenst')
+# added a new line for git testing purposes
 
 def one_step(autobahn_old, velocity_old, v_max, p):
     num_cells = len(autobahn_old)
